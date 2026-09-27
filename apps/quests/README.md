@@ -57,7 +57,7 @@ Use whatever coding agent you prefer:
 - **Cursor / Windsurf** — IDE-based agents
 - **Open source** — aider, continue, etc.
 
-The skills in this repo work with any agent that can read markdown instructions and run Python scripts. To install the skills, follow the instructions in the [README](../README.md).
+The skills in this repo work with any agent that can read markdown instructions and run Python scripts. To install the skills, follow the instructions in the [README](../../README.md).
 
 ### 3. Get Your HF Token
 
@@ -83,7 +83,7 @@ git clone https://github.com/huggingface/skills.git
 cd skills
 ```
 
-Point your coding agent at the relevant configuration. Check the [README](../README.md) for instructions on how to use the skills with your coding agent.
+Point your coding agent at the relevant configuration. Check the [README](../../README.md) for instructions on how to use the skills with your coding agent.
 
 ## Your First Quest
 

@@ -8,7 +8,7 @@ The best open source models are built on openly available datasets. By publishin
 
 ## The Skill
 
-Use `hf-datasets/` for this quest. Key capabilities:
+Use `skills/huggingface-datasets/` for this quest. Key capabilities:
 
 - Initialize dataset repos with proper structure
 - Multi-format support: chat, classification, QA, completion, tabular
@@ -16,9 +16,8 @@ Use `hf-datasets/` for this quest. Key capabilities:
 - Streaming uploads without downloading entire datasets
 
 ```bash
-# Quick setup with a template
-python hf-datasets/scripts/dataset_manager.py quick_setup \
-  --repo_id "your-username/dataset-name" --template chat
+# Create the dataset repo (or reuse an existing one)
+hf repos create your-username/dataset-name --type dataset --exist-ok
 ```
 
 ## XP Tiers
@@ -34,13 +33,9 @@ python hf-datasets/scripts/dataset_manager.py quick_setup \
 **What counts:** Clean data, clear documentation, proper licensing.
 
 ```bash
-python hf-datasets/scripts/dataset_manager.py init \
-  --repo_id "hf-skills/your-dataset-name"
+hf repos create hf-skills/your-dataset-name --type dataset --exist-ok
 
-python hf-datasets/scripts/dataset_manager.py add_rows \
-  --repo_id "hf-skills/your-dataset-name" \
-  --template classification \
-  --rows_json "$(cat your_data.json)"
+hf upload hf-skills/your-dataset-name ./your_data.json data --type dataset
 ```
 
 ### 🐕 Standard — 100 XP
@@ -65,9 +60,7 @@ python hf-datasets/scripts/dataset_manager.py add_rows \
 
 ## Resources
 
-- [SKILL.md](../../hf-datasets/SKILL.md) — Full skill documentation
-- [Templates](../../hf-datasets/templates/) — JSON templates for each format
-- [Examples](../../hf-datasets/examples/) — Sample data and system prompts
+- [SKILL.md](../../skills/huggingface-datasets/SKILL.md) — Full skill documentation
 
 ---
 

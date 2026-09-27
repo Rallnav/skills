@@ -8,7 +8,7 @@ Fine-tuning is how we adapt foundation models to specific tasks. By sharing fine
 
 ## The Skill
 
-Use `hf-llm-trainer/` for this quest. Key capabilities:
+Use `skills/huggingface-llm-trainer/` for this quest. Key capabilities:
 
 - **SFT** (Supervised Fine-Tuning) — Standard instruction tuning
 - **DPO** (Direct Preference Optimization) — Alignment from preference data
@@ -25,9 +25,9 @@ We'll announce the XP tiers for this quest soon.
 
 ## Resources
 
-- [SKILL.md](../../hf-llm-trainer/SKILL.md) — Full skill documentation
-- [SFT Example](../../hf-llm-trainer/scripts/train_sft_example.py) — Production SFT template
-- [DPO Example](../../hf-llm-trainer/scripts/train_dpo_example.py) — Production DPO template
-- [GRPO Example](../../hf-llm-trainer/scripts/train_grpo_example.py) — Production GRPO template
-- [Training Methods](../../hf-llm-trainer/references/training_methods.md) — Method selection guide
-- [Hardware Guide](../../hf-llm-trainer/references/hardware_guide.md) — GPU selection
+- [SKILL.md](../../skills/huggingface-llm-trainer/SKILL.md) — Full skill documentation
+- [SFT Example](../../skills/huggingface-llm-trainer/scripts/train_sft_example.py) — Production SFT template
+- [DPO Example](../../skills/huggingface-llm-trainer/scripts/train_dpo_example.py) — Production DPO template
+- [GRPO Example](../../skills/huggingface-llm-trainer/scripts/train_grpo_example.py) — Production GRPO template
+- [Training Methods](../../skills/huggingface-llm-trainer/references/training_methods.md) — Method selection guide
+- [Hardware Guide](../../skills/huggingface-llm-trainer/references/hardware_guide.md) — GPU selection
